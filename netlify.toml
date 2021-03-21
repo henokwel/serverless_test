@@ -1,7 +1,7 @@
 [build]
-command = "npm run build"
+command = "CI= npm run build"
 functions = "functions"
-publish = "npm run build"
+publish = "build"
 [[redirects]]
 from = "/api/*"
 to = "/.netlify/functions/:splat"
