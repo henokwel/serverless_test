@@ -6,6 +6,7 @@ function App() {
   const [msg, setMsg] = useState("none")
   useEffect(() => {
 
+    console.log(process.env)
     fetch("api/getTest")
       .then(res => res.json())
       .then(data => setMsg(data.msg))
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <p>My env key {process.env.REACT_APP_MYTEST}</p>
         {msg}
       </header>
     </div>
