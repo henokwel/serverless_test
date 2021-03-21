@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [msg, setMsg] = useState("none")
   useEffect(() => {
+    // comment 2
 
     console.log(process.env)
     fetch("api/getTest")
